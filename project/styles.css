@@ -1,0 +1,141 @@
+body {
+    background-color: rgba(255, 255, 255, 0.759);
+    font-family: Helvetica;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.typing {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.typing-effect {
+    width: 22ch;
+    animation: typing 2s steps(21), effect .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+  
+@keyframes typing {
+    from {
+      width: 0;
+    }
+}
+      
+@keyframes effect {
+    50% {
+      border-color: transparent;
+    }
+}
+  
+
+.section-navbar {
+    background-color: rgb(17, 252, 173);
+    padding: 5px;
+}
+
+.navbar-logo {
+    float: left;
+    height: 30px;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.logo {
+    height: 100%;
+    text-align: center;
+    margin-top: 2px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(14, 217, 149);
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.section-presentation {
+    margin-right: 50%;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.hello-world {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.section-projects {
+    margin-top: 5%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.p-projects {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.section-news {
+    margin-top: 5%;
+}
+
+.posts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    justify-content: space-around;
+    padding: 20px;
+}
