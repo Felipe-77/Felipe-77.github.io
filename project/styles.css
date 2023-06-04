@@ -7,8 +7,8 @@ body {
     background-color: rgba(255, 255, 255, 0.759);
     font-family: var(--main-font);
     font-size: large;
-    color: rgb(0, 0, 0);
-    margin: 0;
+    margin-top: 20px;
+    padding: 30px;
 }
 
 .typing {
@@ -19,13 +19,13 @@ body {
 }
   
 .presentation-typing-effect {
-    width: 22ch;
+    width: 20ch;
     animation: typing 2s steps(21), effect .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: var(--tittle-font);
-    font-size: 2em;
+    font-size: 20px;
 }
 
   
@@ -42,54 +42,53 @@ body {
 }
   
 
-.section-navbar {
-    background-color: rgb(17, 252, 173);
-    height: 40px;
-    padding: 6px;
+header {
+    background-color: rgb(15, 255, 175);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar-logo {
-    float: left;
-    align-content: center;
-    height: 30px;
-    width: 30px;
-    margin-top: 6px;
-    position: relative;
+header * {
+    display: inline;
 }
-.a-logo {
+
+.a-logo{
+    float: left;
+    margin-left: 8px;
+    padding: 3px;
+
     font-family: var(--tittle-font);
     font-size: 30px;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: -5px;
 }
 
-
-ul {
-    list-style-type: none;
-    background-color: transparent;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-}
-
-li {
+header ul {
     float: right;
+    margin-right: 8px;
 }
 
-.navbar a {
-    display: block;
-    padding: 10px;
+header li a {
+    padding: 7px;
+    border-radius: 10px;
     background-color: rgb(14, 217, 149);
-    font-size: medium;
-    color: rgb(0, 0, 0);
+
+    font-size: small;
+    color: black;
     text-decoration: none;
 }
 
 .section-presentation {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 50%;
 }
 
